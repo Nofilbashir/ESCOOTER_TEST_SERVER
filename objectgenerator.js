@@ -25,7 +25,7 @@ function createRandomRideObject() {
     };
   }
   
- 
+
   function createListofObjects(){
     const numberOfObjects = 5;
     const rideObjects = [];

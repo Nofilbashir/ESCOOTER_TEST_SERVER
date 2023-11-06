@@ -13,31 +13,8 @@ app.use(cors())
 
 //routes
 app.get('/api/impactData', (req,res)=>{
-    // const data = createListofObjects()
-    const data = [
-        {
-          _id: "0123456789abcdef",
-          vehicle_id: "0123456789abcdef",
-          vehicle_type: "e_scooter",
-          ride_distance:9,
-          createdAt: new Date().toISOString()
-        },
-        {
-          _id: "0123456789abcdef",
-          vehicle_id: "0123456789abcdef",
-          vehicle_type: "e_scooter",
-          ride_distance: 12,
-          createdAt: new Date().toISOString()
-        },
-        {
-          _id: "0123456789abcdef",
-          vehicle_id: "0123456789abcdef",
-          vehicle_type: "e_scooter",
-          ride_distance: 13,
-          createdAt: new Date().toISOString()
-        },
-       
-       ]
+    const data = createListofObjects()
+    
     res.send({success:true,data:data})
 })
 

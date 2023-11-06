@@ -27,7 +27,7 @@ function createRandomRideObject() {
   
 
   function createListofObjects(){
-    const numberOfObjects = 5;
+    const numberOfObjects =5;
     const rideObjects = [];
     for (let i = 0; i < numberOfObjects; i++) {
         const rideObject = createRandomRideObject();

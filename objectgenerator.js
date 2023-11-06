@@ -11,16 +11,16 @@ function generateRandomHexString(length) {
 
 function createRandomRideObject() {
     const _id =generateRandomHexString(24);
-    const vehicleId = generateRandomHexString(24);
-    const vehicleType= "e_scooter";
-    const rideDistance = Math.floor(Math.random() * (10 - 3 + 1)) + 3;
+    const vehicle_id = generateRandomHexString(24);
+    const vehicle_type= "e_scooter";
+    const ride_distance = Math.floor(Math.random() * (10 - 3 + 1)) + 3;
     const createdAt = new Date().toISOString();
   
     return {
       _id: _id,
-      vehicle_id: vehicleId,
-      vehicle_type: vehicleType,
-      ride_distance: rideDistance,
+      vehicle_id: vehicle_id,
+      vehicle_type: vehicle_type,
+      ride_distance: ride_distance,
       createdAt: createdAt
     };
   }

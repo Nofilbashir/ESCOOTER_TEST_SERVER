@@ -14,7 +14,7 @@ app.use(cors())
 //routes
 app.get('/api/impactData', (req,res)=>{
     const data = createListofObjects()
-    res.send(data)
+    res.send({success:true,data:data})
 })
 
 app.get('/', (req,res)=>res.send("E_SCOTER TEST SERVER"))

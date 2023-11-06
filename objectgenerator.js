@@ -12,7 +12,7 @@ function generateRandomHexString(length) {
 function createRandomRideObject() {
     const _id =generateRandomHexString(24);
     const vehicleId = generateRandomHexString(24);
-    const vehicleType= "e-scooter";
+    const vehicleType= "e_scooter";
     const rideDistance = Math.floor(Math.random() * (10 - 3 + 1)) + 3;
     const createdAt = new Date().toISOString();
   
